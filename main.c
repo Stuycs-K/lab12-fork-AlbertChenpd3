@@ -8,7 +8,7 @@
 int rand(){
   int randomFile = open("/dev/urandom",O_RDONLY,0644);
   int randomBuffer[1];
-  read(randomFile,randomBuffer,5);
+  read(randomFile,randomBuffer,4);
   printf(" %d about to create 2 child processes \n",getpid());
 return *randomBuffer;
 }

@@ -21,7 +21,7 @@ int main(){
         int x = rand() % 5+1;
       printf(" %d %d sec \n",getpid(),x);
       sleep(x);
-      printf("%d finished after %dsec\n",getpid(),x)
+      printf("%d finished after %dsec\n",getpid(),x);
       return x;
 }
   else{
